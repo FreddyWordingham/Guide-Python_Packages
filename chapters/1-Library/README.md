@@ -2,15 +2,15 @@
 
 ## Add sample.py
 
-Let's start by adding a [`sample.py`](./mandy/sample.py) file to our project:
+Let's start by adding a [`sample.py`](./mandybrot/sample.py) file to our project:
 
 ```shell
-touch mandy/sample.py
+touch mandybrot/sample.py
 ```
 
 ## Link it to the package
 
-In the [`__init__.py`](./mandy/__init__.py) file, we'll add a line that imports the `sample` sub-module:
+In the [`__init__.py`](./mandybrot/__init__.py) file, we'll add a line that imports the `sample` sub-module:
 
 ```python
 from . import sample
@@ -37,9 +37,14 @@ Inside `sample.py` we'll add a function that calculates the number of iterations
 
 ```python
 def point(real, imag, max_iters):
-    c = real + imag * 1j
-    z = 0j
+    """
+    Determine the number of iterations required to escape a
+    circle of radius 2.0 from a given initial complex point.
+    """
 
+    c = real + imag * 1j
+
+    z = 0j
     for i in range(max_iters):
         z = z * z + c
 
@@ -60,7 +65,7 @@ poetry run python
 ```
 
 ```python
->>> import mandy
+>>> import mandybrot as mandy
 >>> mandy.sample.point(0, 0, 100)
 100
 ```
