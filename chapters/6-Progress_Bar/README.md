@@ -13,7 +13,7 @@ poetry add tqdm
 
 ## Add to area function
 
-Edit the `area()` function in [`mandy/sample.py`](./mandy/sample.py) to look like this:
+Edit the `area()` function in [`mandybrot/sample.py`](./mandybrot/sample.py) to look like this:
 
 ```python
 from tqdm import tqdm # Don't forget to add this to the top of the file.

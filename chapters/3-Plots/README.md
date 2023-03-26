@@ -13,7 +13,7 @@ poetry add numpy
 
 ## Add sample area
 
-Within the [`sample.py`](./mandy/sample.py) file we'll add the `numpy` import:
+Within the [`sample.py`](./mandybrot/sample.py) file we'll add the `numpy` import:
 
 ```python
 import numpy as np

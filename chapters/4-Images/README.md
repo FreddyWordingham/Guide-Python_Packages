@@ -8,13 +8,13 @@ We can use this to create an image by looping over an array of points, calculati
 We can create an image by converting each of these numbers into a colour encoded by a tuple of three numbers representing the red, green and blue components.
 Each of these components can be any number between 0 and 255, and we can use these numbers to create a wide range of colours.
 
-Let's create a new file called [`colour.py`](./mandy/colour.py) next to `sample.py`:
+Let's create a new file called [`colour.py`](./mandybrot/colour.py) next to `sample.py`:
 
 ```shell
-touch mandy/colour.py
+touch mandybrot/colour.py
 ```
 
-And then link it to the library by adding an import to the [`__init__.py`](./mandy/__init__.py) file:
+And then link it to the library by adding an import to the [`__init__.py`](./mandybrot/__init__.py) file:
 
 ```python
 from . import colour
@@ -22,7 +22,7 @@ from . import colour
 
 ## Grayscale "colouring"
 
-Back inside [`colour.py`](./mandy/colour.py) we'll add a function called `grayscale()` which will convert an integer number into an RGB colour:
+Back inside [`colour.py`](./mandybrot/colour.py) we'll add a function called `grayscale()` which will convert an integer number into an RGB colour:
 
 ```python
 def grayscale(value, max_iters):

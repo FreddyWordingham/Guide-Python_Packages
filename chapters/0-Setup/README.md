@@ -77,10 +77,10 @@ The `-c` option lets us run a single command:
 poetry run python -c "print('Hello World')"
 ```
 
-You can test if everything is working by running `import mandy`:
+You can test if everything is working by running `import mandybrot`:
 
 ```shell
-poetry run python -c "import mandy"
+poetry run python -c "import mandybrot"
 ```
 
 (Nothing should happen, but if you get an error then something is wrong.)
