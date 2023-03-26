@@ -1,5 +1,9 @@
 import argparse
+import os
+
 import mandybrot as mandy
+
+OUTPUT_DIR = "output"
 
 # Parse command line arguments
 parser = argparse.ArgumentParser()
@@ -11,6 +15,10 @@ parser.add_argument("scale", type=float)
 parser.add_argument("max_iters", type=int)
 args = parser.parse_args()
 
+# Create output directory
+if not os.path.exists(OUTPUT_DIR):
+    os.makedirs(OUTPUT_DIR)
+
 # Sample the region
 data = mandy.sample.area(
     args.real, args.imag, args.width, args.height, args.scale, args.max_iters
@@ -21,4 +29,4 @@ cols = mandy.colour.image(data, args.max_iters, mandy.colour.grayscale)
 
 # Encode the image
 img = mandy.colour.encode(cols)
-img.save("mandy.png")
+img.save(os.path.join(OUTPUT_DIR, "mandy.png"))
