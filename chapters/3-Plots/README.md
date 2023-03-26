@@ -11,7 +11,7 @@ We'll use `numpy` arrays to store the image data.
 poetry add numpy
 ```
 
-## Add sample.area()
+## Add sample area
 
 Within the [`sample.py`](./mandy/sample.py) file we'll add the `numpy` import:
 

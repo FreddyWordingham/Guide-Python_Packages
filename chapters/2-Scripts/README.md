@@ -21,6 +21,7 @@ Inside `run.py` we'll add some code to parse the command line arguments, and the
 
 ```python
 import argparse
+
 import mandybrot as mandy
 
 # Parse command line arguments
