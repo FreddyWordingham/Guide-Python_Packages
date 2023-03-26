@@ -39,12 +39,12 @@ def area(real, imag, width, height, scale, max_iters):
     return mandelbrot_set
 ```
 
-## Try it out
+## Try it
 
 We can try out this function by running the following code in a Python REPL:
 
 ```shell
-poetry run python scripts/run.py 0 0 100
+poetry run python scripts/run.py -0.5 0 17 17 0.2 99
 ```
 
 You should see an array of numbers printed looking like this:

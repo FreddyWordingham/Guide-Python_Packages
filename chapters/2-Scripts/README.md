@@ -37,7 +37,7 @@ iterations = mandy.sample.point(args.real, args.imag, args.max_iters)
 print(f"({args.real}, {args.imag}) -> {iterations}")
 ```
 
-## Try it out
+## Try it
 
 We can run the script by running the following command:
 

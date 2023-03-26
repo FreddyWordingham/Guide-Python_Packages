@@ -56,7 +56,7 @@ def point(real, imag, max_iters):
 
 You can read more about what this is calculating in the details sections below, but for now just know that this function takes in a complex number, and returns an integer between 0 and `max_iters`.
 
-## Run
+## Try it
 
 We can try out this function by running the following code in a `Python` REPL:
 
