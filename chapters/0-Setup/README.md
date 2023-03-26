@@ -1,6 +1,6 @@
 # Project Setup
 
-## Add pyproject.toml
+## Poetry Init
 
 Create a new `Poetry` project:
 
