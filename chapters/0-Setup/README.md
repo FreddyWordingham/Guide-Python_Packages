@@ -13,7 +13,7 @@ poetry init
 -   My description will be: `Plot the magical Mandelbrot set.`
 -   I am: `FreddyWordingham <freddy@digilab.co.uk>`
 -   I'm not going to add a license
--   Compatible with `Python` versions `3.8` and above
+-   Compatible with Python versions `3.8` and above
 -   And I'm not going to add any dependencies right now
 
 This will generate a [`pyproject.toml`](./pyproject.toml) file containing the project metadata.
