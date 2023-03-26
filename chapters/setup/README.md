@@ -9,7 +9,7 @@ poetry init
 ```
 
 -   I'm going to call this project `mandybrot`
--   Starting at version `0.0.0`
+-   Starting at version `0.1.0`
 -   My description will be: `Plot the magical Mandelbrot set.`
 -   I am: `FreddyWordingham <freddy@digilab.co.uk>`
 -   I'm not going to add a license
